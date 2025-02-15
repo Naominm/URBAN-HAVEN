@@ -502,7 +502,7 @@ margin-left: 3rem;
 .property-section{
   min-height: 100vh;
   /* border: 2px solid red; */
-  margin-top: 5rem;
+  margin-top: 10rem;
   background-color:var(--normal-secondary-color);
 }
 .feature-text-section{
@@ -693,3 +693,244 @@ color: var(--color-black-dark);
 
 }
 /* end of property section */
+/* statt of amenities-section styling */
+.amenities-section{
+  min-height: 100vh;
+  margin-top: 10rem;
+  /* border: 2px solid gold; */
+  text-align: justify;
+  background:var(--normal-secondary-color);
+}
+.amenities-section h3{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+}
+.amenities-container{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.ammenity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 40rem;
+  /* border: 2px solid gold; */
+  padding: 3rem;
+  text-align: center;
+}
+.amenity-image{
+  width: 5rem;
+
+}
+.amenity-image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* .amenity-image img :hover{
+  transition: ;
+} */
+
+/* end of amenities-section styling*/
+
+/* start of contact form styling */
+.c-sec{
+  min-height: 100vh;
+  margin-top: 6rem;
+  /* border: 2px solid red;
+  background-color: #1c2d37; */
+}
+.contact-section{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.heading{
+  text-transform: capitalize;
+  /* border: 2px solid red; */
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+/* .form{
+  max-width: 45rem;
+  border: 2px solid red;
+  min-height: 50rem;
+ 
+}
+.form label{
+  display: block;
+  margin-top:1rem;
+  border: 2px solid red;
+  padding-top: 4rem;
+}
+.form input{
+  padding: 2rem;
+}
+.firstname{
+  display: block;
+} */
+
+.form {
+  width: 100%;
+  max-width: 50rem;
+  padding: 2rem;
+  border-radius: 0.6rem;
+ background-color: var(--normal-secondary-color);
+ /* border: 2px solid gold; */
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding:  1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form button {
+  width: 30%;
+  padding: 1rem;
+  background: #0d381d;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left:30rem;
+  margin-top: 1rem;
+}
+
+.form button:hover {
+  background: var(--new-secondary-color);
+}
+
+
+/* end of contact form styling */
+
+/* footer stylings */
+.footer {
+  margin-top: 15rem;
+}
+
+.footer-container {
+
+  color: var(--color-black-dark);
+  background-color: var(--color-black);
+  padding: 10rem 10rem;
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 62.5em) {
+  .footer-container {
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+}
+
+.footer-column {
+  width: 20%;
+}
+
+@media screen and (max-width: 50em) {
+  .footer-column {
+    width: 100%;
+  }
+}
+.footer-title {
+  color: var(--color-black-dark);
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.footer-text {
+  color: var(--color-black-dark);
+  line-height: 1.5;
+  font-family: var(--secondary-font);
+}
+
+.footer-social-links {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.footer-social-link {
+  --footer-social-link-size: 5rem;
+  width: var(--footer-social-link-size);
+  height: var(--footer-social-link-size);
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-black-dark);
+  font-size: 2rem;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.footer-social-link:hover {
+  transform: scale(1.2);
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-list-item a {
+  text-decoration: none;
+  color: var(--color-black-dark);
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+}
+
+.footer-contact {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-black-dark);
+}
+
+.footer-copyright {
+  background-color: var(--normal-secondary-color);
+  padding: 4rem 1rem;
+  color: var(--color-black-dark);
+  text-align: center;
+}
+
+.footer-copyright a {
+  color: var(--color-black-dark);
+}
+/* end of footer stylings */
