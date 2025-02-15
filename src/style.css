@@ -9,6 +9,9 @@
   --primary-font: "Lora", serif;
   --secondary-font: "Roboto", serif;
   scroll-behavior: smooth;
+  --button-color-secondary:#E6B846;
+  --normal-secondary-color:#a4b6ba;
+  --new-secondary-color:#1c2d37;
 }
 * {
   margin: 0;
@@ -225,11 +228,26 @@ body {
 
  
 }
+.arrow-right:hover{
+  transition: all 1s;
+  background-color: var(--button-color-secondary);
+  color: var(--color-black-dark);
+}
+.call-2-action:hover{
+  transition: all 1s;
+  background-color: var(--button-color-secondary);
+  color: var(--color-black-dark);
+}
 #arrow-left{
   margin-left: -1rem;
   color: var(--color-white);
   background-color: var(--color-secondary);
   border: 0.005rem solid white;
+}
+#arrow-left:hover{
+  transition: all 1s;
+  background-color: var(--button-color-secondary);
+  color: var(--color-black-dark);
 }
 @media screen and (max-width: 62.5em) {
   .top-section{
@@ -479,14 +497,199 @@ margin-left: 3rem;
     }
   }
 
-
-/* .image1 img{
-  width: 20rem;
-}
-.image2 img{
-  width: 20rem;
-  }
-.image3 img{
-    width: 20rem;
-    } */
 /* end of hero section */
+/* start of property section */
+.property-section{
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  margin-top: 5rem;
+  background-color:var(--normal-secondary-color);
+}
+.feature-text-section{
+  margin: 1.5rem;
+  margin-left: 3rem;
+    /* border: 2px solid papayawhip; */
+}
+.feature-listing-text{
+
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+
+
+}
+.feature-listing-text{
+ text-transform: capitalize;
+}
+.feature-text-section h3{
+  text-transform: capitalize;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+.heading-subtext{
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+.search{
+  display: flex;
+ align-items: center;
+ margin-top: 5rem;
+ margin-left: 30rem;
+  width: 68rem;
+  gap: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgb(6, 15, 9);
+  text-transform: capitalize;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  background-color: var(--color-white);
+}
+.search p span{
+  color: var(--color-white);
+  background-color: var(--new-secondary-color);
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+.location i{
+  padding-right: 1rem;
+}
+.category i{
+  padding-left: 1rem;
+}
+
+.btn-search{
+  background-color: var(--new-secondary-color);
+  color: var(--color-white);
+  padding: 1.2rem;
+  border-radius: 2rem;
+}
+.btn-search i{
+ 
+  padding-right: 1.5rem;
+}
+.button-cont{
+  margin-left: 2rem;
+}
+@media screen and (max-width: 75em){
+.search{
+  margin-left: 2rem;
+}
+}
+@media screen and (max-width: 43.75em){
+.search{
+  padding-top:0.9rem;
+  padding-bottom:0.9rem;
+  width: 60rem;
+  gap:6rem;
+  margin-left: 0;
+}
+.search p span{
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  
+
+}
+}
+@media screen and (max-width: 37.5em){
+.search{
+  padding-top:0.1rem;
+  padding-bottom:0.1rem;
+  width: 45rem;
+  gap:2rem;
+  margin-left: 0;
+  font-size: 1rem;
+}
+.search p span{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.btn-search{
+  padding: 0.5rem;
+}
+}
+@media screen and (max-width: 28.125em){
+  .search{
+    width: 30rem;
+  }
+.search p{
+  display: none;
+}
+.btn-search{
+ background: none;
+ color: #0D0D0D;
+ border: none;
+ 
+}
+
+}
+
+.images-feature-sec{
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+}
+.feature-img-container{
+  
+  position: relative;
+  width: 35rem;
+  /* border: 2px solid green; */
+}
+.feature-img-container img{
+  border-radius: 2rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+.caption-details{
+  /* border: 2px solid red; */
+  padding: 1rem;
+  display: flex;
+  gap: 3rem;
+  font-size: 2rem;
+}
+.caption-details span{
+  font-size: 1.5rem;
+  font-family: var(--primary-font);
+  padding-left: 1rem;
+}
+
+.further-details{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+.left h4{
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  
+}
+.left p{
+  text-transform: capitalize;
+  font-size: 1.0rem;
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+}
+#feature-btn{
+  padding: 1rem;
+  width: 9.5rem;
+  background:transparent;
+  border: 1px solid black;
+  color: var(--color-white);
+}
+#feature-btn:hover{
+background-color: var(--color-primary);
+color: var(--color-black-dark);
+}
+.border-hr{
+  color: red;
+  margin-top: 1rem;
+
+}
+/* end of property section */
