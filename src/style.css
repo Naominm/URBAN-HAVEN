@@ -462,10 +462,15 @@ body {
 }
 @media screen and (max-width: 48em) {
   .bottom-hero-items {
-    gap: 2rem;
+    gap: 2.5rem;
     margin-top: 0rem;
     padding-top: 0rem;
     max-height: 10rem;
+    margin-left: 1rem;
+  }
+  .item1 h3 {
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
 @media screen and (max-width: 47.6875em) {
