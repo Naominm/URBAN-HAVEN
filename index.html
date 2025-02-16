@@ -13,27 +13,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<nav>
-<div class="nav-items">
-  <div class="icon-items">
-  <img src="/assets/urban-images/apartment-icon.png" class="icon" alt="appartment-icon">
-  <p><span>Urban Haven </span></p>
-</div>
-  <div class="nav-links">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Property</a>
-  <a href="#">Pages</a>
-  <a href="#">Agencies</a>
-  <a href="#">Blog</a>
-  <a href="#">contact</a>
-  <button class="call-2-action">Request a visit <i class="fa-solid fa-arrow-right-long"></i></i></button>
-  </div>
-</div>
-</nav>
 
   </head>
   <body>
+    <a href="#header" class="scroll-to-top">
+      <i class="fa-solid fa-up-long"></i>
+    </a>
+    <nav id="header">
+      <div class="nav-items" >
+        <div class="icon-items">
+        <img src="/assets/urban-images/apartment-icon.png" class="icon" alt="appartment-icon">
+        <p><span>Urban Haven </span></p>
+      </div>
+        <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#property">Property</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#contact">contact</a>
+        <button class="call-2-action">Request a visit <i class="fa-solid fa-arrow-right-long"></i></i></button>
+        </div>
+      </div>
+      </nav>
+      
     <div class="parent">
       <div class="hero-section">
         <div class="top-section">
@@ -43,7 +45,7 @@
         <div class="left-container">
           <div class="left-text">
         <h2 class="title">urban haven  <span>Appartments</span></h2>
-        <p class="title-p">Urban Haven Apartments offers modern, secure, and affordable living spaces in Murang'a, Kiharu. Explore our well-maintained apartments and enjoy a peaceful living environment tailored to your needs.</p>
+        <p class="title-p">Welcome to Urban Haven-where comfort meets convenience.Urban Haven Apartments offers modern, secure, and affordable living spaces. Explore our apartments and enjoy a peaceful living environment tailored to your needs.</p>
         <div class="button-and-arrow">
         <button class="call-2-action" id="button">Request a visit <i class="fa-solid fa-arrow-right-long"></i></button>
       </div>
@@ -97,7 +99,7 @@
         
       </div>
       <!-- start of the property section -->
-      <div class="property-section">
+      <div class="property-section" id="property">
         <div class="feature-text-section">
         <p class="feature-listing-text">Feature listing</p>
         <h3>find your dream home today</h3>
@@ -664,7 +666,7 @@
       </div>
       <!-- end of property section -->
        <!-- start of amenities section -->
-       <div class="amenities-section">
+       <div class="amenities-section" id="amenities">
         <h3>Amenities</h3>
         <div class="amenities-container">
           <p></p>
@@ -720,7 +722,22 @@
         </div>
        </div>
        <!-- end of amenities section -->
-<div class="c-sec">
+        <!-- start of about us -->
+         <div class="about-section" id="about">
+          <h2 class="about-title">company</h2>
+          <div class="container-about">
+            <div class="about-img-cont">
+              <img src="./assets/urban-images/about-team.jpg" alt="">
+            </div>
+            <div class="about-text">
+              <h3>why us?</h3>
+              <p>Urban Haven Apartments has been providing quality rental homes in Murang'a, Kiharu, for over 12 years. Our commitment to comfort, security, and affordability makes us the ideal choice for individuals and families seeking a peaceful living space. With a reputation built on trust and excellent service, we are now expanding our reach online to make finding your next home even easier.</p>
+              <button class="call-2-action" id="about-b"> Book a visit</button>
+            </div>
+          </div>
+         </div>
+         <!-- end of about us -->
+<div class="c-sec" id="contact">
   <div class="heading">
     <h3>get in touch</h3>
   </div>
@@ -730,14 +747,14 @@
           <form>
             <div class="firstname">
             <label for="fname"><span>first nname</span> 
-            <input type="text" id="fname" placeholder=" firstnname/">
+            <input type="text" id="fname" placeholder=" firstnname" required>
           </label>
         </div>
           <label for="lname">last name
-            <input type="text" id="lname" placeholder="last name">
+            <input type="text" id="lname" placeholder="last name" required>
           </label>
           <label for="email"> email adress
-            <input type="email" id="email" placeholder="email adress">
+            <input type="email" id="email" placeholder="email adress" required>
           </label>
           <label for="message">message
             <textarea id="message" name="message" rows="4" required></textarea>
@@ -747,7 +764,7 @@
         </div>
        </div>
       </div>
-       <!-- footer -->
+       <!-- stsrt of footer -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-column">
@@ -788,7 +805,6 @@
             <li class="footer-list-item"><a href="#">careers</a></li>
             <li class="footer-list-item"><a href="#">properties</a></li>
             <li class="footer-list-item"><a href="#">agents</a></li>
-            <li class="footer-list-item"><a href="#">blog post</a></li>
             <li class="footer-list-item"><a href="#">news</a></li>
           </ol>
         </div>
@@ -807,7 +823,6 @@
           <h3 class="footer-title">company</h3>
           <ol class="footer-list">
             <li class="footer-list-item"><a href="#">about us</a></li>
-            <li class="footer-list-item"><a href="#">blog</a></li>
             <li class="footer-list-item"><a href="#">contact</a></li>
             <li class="footer-list-item"><a href="#">careers</a></li>
           </ol>
