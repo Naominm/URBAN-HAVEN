@@ -891,6 +891,11 @@ body {
 .form button:hover {
   background: var(--new-secondary-color);
 }
+@media screen and (max-width: 48em) {
+  .about-img-cont {
+    max-width: 30rem;
+  }
+}
 @media screen and (max-width: 38.75em) {
   .form {
     padding: 1rem;
