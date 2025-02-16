@@ -573,10 +573,17 @@ body {
 .button-cont {
   margin-left: 2rem;
 }
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 75.0605em) {
   .search {
-    margin-left: 2rem;
-    width: 40rem;
+    width: 20rem;
+  }
+  .search p {
+    display: none;
+  }
+  .btn-search {
+    background: none;
+    color: #0d0d0d;
+    border: none;
   }
 }
 @media screen and (max-width: 43.75em) {
@@ -923,6 +930,9 @@ body {
   }
   .c-sec {
     min-height: 40vh;
+  }
+  .scroll-to-top {
+    display: none;
   }
 }
 
