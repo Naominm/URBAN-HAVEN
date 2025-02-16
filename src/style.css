@@ -278,10 +278,14 @@ body {
     width: 100%;
   }
   .images-container {
-    margin-top: 0rem;
+    display: none;
   }
+  .images-container img {
+    display: none;
+  }
+
   #button {
-    display: inline-flex;
+    display: none;
   }
 }
 
@@ -469,7 +473,10 @@ body {
 }
 @media screen and (max-width: 48em) {
   .bottom-hero-items {
-    gap: 5rem;
+    gap: 2rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    max-height: 10rem;
   }
 }
 @media screen and (max-width: 47.6875em) {
@@ -593,6 +600,10 @@ body {
   .search p span {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
+  }
+  .property-section {
+    margin-top: -25rem;
+    padding-top: 0rem;
   }
 }
 @media screen and (max-width: 37.5em) {
